@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr Mahmud Eye Care in Muroli Mor, Jashore. Eye care information and appointment requests.">
+  <meta name="theme-color" content="#123b55">
+  <title>Dr Mahmud Eye Care | সুস্থ চোখ, সুন্দর জীবন</title>
+  <style>
+    :root{--navy:#123b55;--blue:#167eaa;--teal:#19a6a5;--pale:#eef8fa;--ink:#183244;--muted:#617583;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid #e6eef1}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}.brand img{width:72px;height:62px;object-fit:contain}.brand strong{display:block;color:var(--navy);font-size:17px;letter-spacing:.3px}.brand small{display:block;color:var(--teal);font-weight:700}
+    nav{display:flex;align-items:center;gap:20px;font-size:14px;color:#385466}nav a:hover{color:var(--blue)}
+    .actions{display:flex;align-items:center;gap:9px}.lang,.menu{border:1px solid #d6e5eb;background:#fff;border-radius:10px;padding:9px 12px;font-weight:700;color:var(--navy);cursor:pointer}.menu{display:none}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 19px;background:var(--teal);color:white;font-weight:700;cursor:pointer;box-shadow:0 8px 20px #19a6a52b}.btn:hover{filter:brightness(.95)}.btn.secondary{background:var(--navy)}
+    .hero{background:linear-gradient(120deg,#eff9fb 0%,#fff 58%,#e9f7f7 100%);padding:70px 0 62px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:42px}.eyebrow{display:inline-block;padding:6px 12px;border-radius:99px;background:#dff3f3;color:#087f83;font-weight:700;font-size:13px}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.12;color:var(--navy);margin:17px 0}.hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-card{background:#fff;border:1px solid #e2eef1;border-radius:24px;padding:25px;box-shadow:0 18px 55px #123b5510}.hero-card img{width:100%;max-height:250px;object-fit:contain}.hero-card .slogan{text-align:center;color:var(--teal);font-size:20px;font-weight:700;margin-top:8px}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:-22px;position:relative}.quick article{background:white;border:1px solid #e6eef1;border-radius:16px;padding:18px;box-shadow:0 8px 24px #123b550b}.quick b{display:block;color:var(--navy);margin-bottom:4px}.quick span{font-size:14px;color:var(--muted)}
+    section{padding:66px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 30px}.section-head h2{font-size:32px;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e2edf0;border-radius:18px;padding:23px;background:white}.icon{width:45px;height:45px;border-radius:13px;background:var(--pale);display:grid;place-items:center;color:var(--blue);font-size:22px}.card h3{color:var(--navy);margin:14px 0 5px}.card p{color:var(--muted);margin:0;font-size:14px}
+    .about{background:#f5fafb}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-panel{background:#fff;border-radius:20px;padding:27px;border:1px solid #e2edf0}.about-panel h2{color:var(--navy);font-size:30px;margin-top:0}.hours{width:100%;border-collapse:collapse}.hours td{padding:11px 4px;border-bottom:1px solid #edf1f3}.hours td:last-child{text-align:right;font-weight:700;color:#087f83}
+    .appointment{background:linear-gradient(135deg,var(--navy),#165d78);color:white}.appointment .section-head h2,.appointment .section-head p{color:white}.form{max-width:720px;margin:auto;background:white;color:var(--ink);padding:26px;border-radius:20px;display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-weight:700;font-size:14px}input,select,textarea{font:inherit;padding:12px;border:1px solid #d7e3e8;border-radius:10px;width:100%;background:#fff}textarea{min-height:90px;resize:vertical}.form-note{grid-column:1/-1;font-size:13px;color:var(--muted);margin:0}.form button{grid-column:1/-1}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-box{padding:24px;border-radius:18px;background:var(--pale)}.contact-box h3{color:var(--navy);margin-top:0}.contact-box p{color:var(--muted)}.phone{font-size:25px;font-weight:800;color:var(--blue)}
+    footer{background:#0d2d42;color:#dcebf0;padding:28px 0;text-align:center;font-size:14px}footer strong{color:white}
+    @media(max-width:800px){nav{display:none;position:absolute;top:82px;left:0;right:0;background:white;padding:18px 4%;border-bottom:1px solid #e6eef1;flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:45px 0}.hero-card{max-width:440px;margin:auto}.quick{grid-template-columns:1fr;margin-top:18px}.cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.brand img{width:55px;height:52px}.brand strong{font-size:14px}.brand small{font-size:12px}.actions{gap:5px}.lang,.menu{padding:8px}.cards,.contact-grid,.form{grid-template-columns:1fr}.field.full,.form-note,.form button{grid-column:1}.section-head h2{font-size:27px}.hero p{font-size:16px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Dr Mahmud Eye Care home">
+      <img src="assets/logo.png" alt="Dr Mahmud Eye Care official logo">
+      <span><strong>DR MAHMUD EYE CARE</strong><small>সুস্থ চোখ, সুন্দর জীবন</small></span>
+    </a>
+    <nav id="nav">
+      <a href="#home" data-en="Home" data-bn="হোম">Home</a><a href="#about" data-en="About" data-bn="আমাদের সম্পর্কে">About</a>
+      <a href="#services" data-en="Services" data-bn="সেবাসমূহ">Services</a><a href="#hours" data-en="Visiting Hours" data-bn="সময়সূচি">Visiting Hours</a><a href="#contact" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
+    </nav>
+    <div class="actions"><button class="lang" id="langBtn" type="button">বাংলা</button><button class="menu" id="menuBtn" type="button" aria-label="Open menu">☰</button></div>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow" data-en="Eye care in Jashore" data-bn="যশোরে চক্ষু সেবা">Eye care in Jashore</span>
+        <h1 data-en="Care for your eyes. Protect your vision." data-bn="চোখের যত্ন নিন, দৃষ্টিশক্তি সুরক্ষিত রাখুন।">Care for your eyes. Protect your vision.</h1>
+        <p data-en="Welcome to Dr Mahmud Eye Care. Contact our centre for information and appointment requests." data-bn="ডা. মাহমুদ আই কেয়ারে আপনাকে স্বাগতম। তথ্য ও অ্যাপয়েন্টমেন্টের জন্য আমাদের সঙ্গে যোগাযোগ করুন।">Welcome to Dr Mahmud Eye Care. Contact our centre for information and appointment requests.</p>
+        <a class="btn" href="#appointment" data-en="Request an Appointment" data-bn="অ্যাপয়েন্টমেন্টের অনুরোধ করুন">Request an Appointment</a>
+        <a class="btn secondary" href="tel:+8801778931050" style="margin-left:8px" data-en="Call Us" data-bn="ফোন করুন">Call Us</a>
+      </div>
+      <div class="hero-card"><img src="assets/logo.png" alt="Official Dr Mahmud Eye Care logo"><div class="slogan">সুস্থ চোখ, সুন্দর জীবন</div></div>
+    </div>
+  </section>
+  <div class="container quick">
+    <article><b data-en="Call for appointments" data-bn="অ্যাপয়েন্টমেন্টে ফোন করুন">Call for appointments</b><span>01778 93 10 50</span></article>
+    <article><b data-en="Our location" data-bn="আমাদের ঠিকানা">Our location</b><span data-en="Muroli Mor, Jashore" data-bn="মুড়লি মোড়, যশোর">Muroli Mor, Jashore</span></article>
+    <article><b data-en="Visiting days" data-bn="চেম্বারের দিন">Visiting days</b><span data-en="Tuesday – Thursday" data-bn="মঙ্গলবার – বৃহস্পতিবার">Tuesday – Thursday</span></article>
+  </div>
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div><span class="eyebrow" data-en="About our centre" data-bn="আমাদের সম্পর্কে">About our centre</span><h2 style="color:var(--navy);font-size:32px" data-en="Welcome to Dr Mahmud Eye Care" data-bn="ডা. মাহমুদ আই কেয়ারে স্বাগতম">Welcome to Dr Mahmud Eye Care</h2><p data-en="We are located opposite Hazi Mohsin School, Muroli Mor, Sadar, Jashore, Bangladesh. Please call us to confirm availability before visiting on other days." data-bn="আমাদের অবস্থান: হাজী মুহসিন স্কুলের বিপরীতে, মুড়লি মোড়, সদর, যশোর, বাংলাদেশ। অন্য দিন আসার আগে সময়সূচি নিশ্চিত করতে ফোন করুন।">We are located opposite Hazi Mohsin School, Muroli Mor, Sadar, Jashore, Bangladesh. Please call us to confirm availability before visiting on other days.</p></div>
+      <div class="about-panel" id="hours"><h2 data-en="Visiting Hours" data-bn="চেম্বারের সময়সূচি">Visiting Hours</h2><table class="hours"><tr><td data-en="Tuesday" data-bn="মঙ্গলবার">Tuesday</td><td>12:00 PM – 8:00 PM</td></tr><tr><td data-en="Wednesday" data-bn="বুধবার">Wednesday</td><td>12:00 PM – 8:00 PM</td></tr><tr><td data-en="Thursday" data-bn="বৃহস্পতিবার">Thursday</td><td>12:00 PM – 8:00 PM</td></tr><tr><td data-en="Other days" data-bn="অন্যান্য দিন">Other days</td><td data-en="Please call" data-bn="ফোন করে জেনে নিন">Please call</td></tr></table></div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="container"><div class="section-head"><h2 data-en="Eye Care Services" data-bn="চক্ষু সেবাসমূহ">Eye Care Services</h2><p data-en="Contact us to learn which consultations and services are currently available." data-bn="বর্তমানে কোন কোন পরামর্শ ও সেবা পাওয়া যাচ্ছে তা জানতে যোগাযোগ করুন।">Contact us to learn which consultations and services are currently available.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">◉</div><h3 data-en="Eye consultation" data-bn="চক্ষু পরামর্শ">Eye consultation</h3><p data-en="Ask about eye examinations and consultation availability." data-bn="চোখ পরীক্ষা ও চিকিৎসকের পরামর্শের সময় জানতে যোগাযোগ করুন।">Ask about eye examinations and consultation availability.</p></article>
+        <article class="card"><div class="icon">＋</div><h3 data-en="Eye health guidance" data-bn="চোখের স্বাস্থ্য পরামর্শ">Eye health guidance</h3><p data-en="Get information about eye health and care." data-bn="চোখের স্বাস্থ্য ও যত্ন সম্পর্কে তথ্য জানুন।">Get information about eye health and care.</p></article>
+        <article class="card"><div class="icon">◷</div><h3 data-en="Appointment requests" data-bn="অ্যাপয়েন্টমেন্টের অনুরোধ">Appointment requests</h3><p data-en="Send an appointment request by WhatsApp for confirmation." data-bn="নিশ্চিতকরণের জন্য WhatsApp-এ অ্যাপয়েন্টমেন্টের অনুরোধ পাঠান।">Send an appointment request by WhatsApp for confirmation.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="appointment" id="appointment">
+    <div class="container"><div class="section-head"><h2 data-en="Request an Appointment" data-bn="অ্যাপয়েন্টমেন্টের অনুরোধ">Request an Appointment</h2><p data-en="Fill in the form. It will open WhatsApp with your request ready to send." data-bn="ফর্মটি পূরণ করুন। আপনার অনুরোধটি পাঠানোর জন্য WhatsApp খুলবে।">Fill in the form. It will open WhatsApp with your request ready to send.</p></div>
+      <form class="form" id="bookingForm">
+        <div class="field"><label for="patient" data-en="Patient name" data-bn="রোগীর নাম">Patient name</label><input id="patient" required maxlength="80" placeholder="Your name"></div>
+        <div class="field"><label for="mobile" data-en="Mobile number" data-bn="মোবাইল নম্বর">Mobile number</label><input id="mobile" required inputmode="tel" maxlength="20" placeholder="01XXXXXXXXX"></div>
+        <div class="field"><label for="date" data-en="Preferred date" data-bn="পছন্দের তারিখ">Preferred date</label><input id="date" type="date" required></div>
+        <div class="field"><label for="language" data-en="Preferred language" data-bn="পছন্দের ভাষা">Preferred language</label><select id="language"><option>বাংলা</option><option>English</option></select></div>
+        <div class="field full"><label for="note" data-en="Short note (optional)" data-bn="সংক্ষিপ্ত তথ্য (ঐচ্ছিক)">Short note (optional)</label><textarea id="note" maxlength="300" placeholder="Optional"></textarea></div>
+        <p class="form-note" data-en="Please do not enter sensitive medical details. This is a request only; your appointment is not confirmed until the centre replies." data-bn="এখানে সংবেদনশীল চিকিৎসা-সংক্রান্ত তথ্য দেবেন না। এটি শুধু অনুরোধ; কেন্দ্র থেকে নিশ্চিত না করা পর্যন্ত অ্যাপয়েন্টমেন্ট নিশ্চিত নয়।">Please do not enter sensitive medical details. This is a request only; your appointment is not confirmed until the centre replies.</p>
+        <button class="btn" type="submit" data-en="Send request on WhatsApp" data-bn="WhatsApp-এ অনুরোধ পাঠান">Send request on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container"><div class="section-head"><h2 data-en="Contact & Location" data-bn="যোগাযোগ ও ঠিকানা">Contact & Location</h2><p data-en="We look forward to hearing from you." data-bn="আপনার যোগাযোগের অপেক্ষায় রইলাম।">We look forward to hearing from you.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3 data-en="Call the centre" data-bn="ফোনে যোগাযোগ">Call the centre</h3><a class="phone" href="tel:+8801778931050">01778 93 10 50</a><p data-en="Call to confirm appointment availability and visiting hours." data-bn="অ্যাপয়েন্টমেন্ট ও চেম্বারের সময় নিশ্চিত করতে ফোন করুন।">Call to confirm appointment availability and visiting hours.</p><a class="btn" href="tel:+8801778931050" data-en="Call now" data-bn="এখনই ফোন করুন">Call now</a></div>
+        <div class="contact-box"><h3 data-en="Visit us" data-bn="আমাদের কাছে আসুন">Visit us</h3><p data-en="Opposite Hazi Mohsin School, Muroli Mor, Sadar, Jashore, Bangladesh." data-bn="হাজী মুহসিন স্কুলের বিপরীতে, মুড়লি মোড়, সদর, যশোর, বাংলাদেশ।">Opposite Hazi Mohsin School, Muroli Mor, Sadar, Jashore, Bangladesh.</p><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Opposite+Hazi+Mohsin+School%2C+Muroli+Mor%2C+Jashore%2C+Bangladesh" data-en="Find on Google Maps" data-bn="Google Maps-এ দেখুন">Find on Google Maps</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container"><strong>DR MAHMUD EYE CARE</strong><br>সুস্থ চোখ, সুন্দর জীবন<br><span data-en="Muroli Mor, Jashore, Bangladesh" data-bn="মুড়লি মোড়, যশোর, বাংলাদেশ">Muroli Mor, Jashore, Bangladesh</span><br>© <span id="year"></span> Dr Mahmud Eye Care</div></footer>
+<script>
+  let currentLang='en';
+  const langBtn=document.getElementById('langBtn');
+  langBtn.addEventListener('click',()=>{
+    currentLang=currentLang==='en'?'bn':'en';
+    document.documentElement.lang=currentLang;
+    document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[currentLang]});
+    langBtn.textContent=currentLang==='en'?'বাংলা':'English';
+  });
+  document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('nav').classList.toggle('open'));
+  document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('bookingForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    const name=document.getElementById('patient').value.trim();
+    const mobile=document.getElementById('mobile').value.trim();
+    const date=document.getElementById('date').value;
+    const pref=document.getElementById('language').value;
+    const note=document.getElementById('note').value.trim();
+    const msg=`Appointment request - Dr Mahmud Eye Care%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(mobile)}%0APreferred date: ${encodeURIComponent(date)}%0ALanguage: ${encodeURIComponent(pref)}%0ANote: ${encodeURIComponent(note)}%0A%0APlease confirm availability.`;
+    window.open(`https://wa.me/8801778931050?text=${msg}`,'_blank','noopener');
+  });
+  const dateInput=document.getElementById('date');
+  dateInput.min=new Date().toISOString().split('T')[0];
+</script>
+</body>
+</html>
